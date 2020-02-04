@@ -155,6 +155,14 @@
               settings:interval="1"
               android:dependency="pulse_ambient_light" />
 
+          <SwitchPreference
+              android:key="ambient_notification_light_accent"
+              android:title="@string/ambient_notification_light_accent_title"
+              android:summary="@string/ambient_notification_light_accent_summary"
+              android:persistent="false"
+              android:dependency="pulse_ambient_light"
+              android:defaultValue="false" />
+
           <com.derpquest.settings.preferences.SystemSettingSwitchPreference
               android:key="pulse_ambient_auto_color"
               android:title="@string/pulse_ambient_auto_color_title"

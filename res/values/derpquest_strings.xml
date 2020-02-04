@@ -792,6 +792,8 @@
     <string name="ambient_notification_light_enabled_sumary">Keep showing on always on display. Until the screen is turned on</string>
     <string name="ambient_notification_light_hide_aod_title">Hide AoD content</string>
     <string name="ambient_notification_light_hide_aod_sumary">Hide other AoD content when bars are showing</string>
+    <string name="ambient_notification_light_accent_title">Use accent color for whatever</string>
+    <string name="ambient_notification_light_accent_summary">Follow system accent color instead of the user defined edge light color</string>
     <string name="pulse_ambient_light_color_title">Edge light color</string>
     <string name="pulse_ambient_auto_color_title">Auto color</string>
     <string name="pulse_ambient_auto_color_summary">Sets edge light color to the primary color of wallpaper</string>
@@ -801,5 +803,6 @@
     <string name="pulse_ambient_light_repeat_count_summary">Set max repeat count. 0 for infinite</string>
     <string name="pulse_ambient_light_pulse_for_all_title">Pulse for all doze events</string>
     <string name="pulse_ambient_light_pulse_for_all_summary">Pulses for any doze wake and not just notifications when enabled</string>
+    <string name="pulse_ambient_light_note">Wake screen on receiving new notifications must be turned on</string>
 
 </resources>

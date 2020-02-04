@@ -16,6 +16,7 @@
 
 package com.derpquest.settings;
 
+import android.annotation.ColorInt;
 import android.app.Activity;
 import android.content.Context;
 import android.content.pm.ActivityInfo;
@@ -24,9 +25,11 @@ import android.content.pm.PackageInfo;
 import android.content.pm.PackageManager;
 import android.content.pm.PackageManager.NameNotFoundException;
 import android.content.pm.Signature;
+import android.content.res.ColorStateList;
 import android.content.res.Configuration;
 import android.content.res.Resources;
 import android.content.res.Resources.NotFoundException;
+import android.content.res.TypedArray;
 import android.hardware.camera2.CameraAccessException;
 import android.hardware.camera2.CameraCharacteristics;
 import android.hardware.camera2.CameraManager;
@@ -204,5 +207,18 @@ public final class Utils {
             // Ignore
         }
         return false;
+    }
+
+    @ColorInt
+    public static int getColorAttrDefaultColor(Context context, int attr) {
+        TypedArray ta = context.obtainStyledAttributes(new int[]{attr});
+        @ColorInt int colorAccent = ta.getColor(0, 0);
+        ta.recycle();
+        return colorAccent;
+    }
+
+    @ColorInt
+    public static int getColorAccentDefaultColor(Context context) {
+        return getColorAttrDefaultColor(context, android.R.attr.colorAccent);
     }
 }
